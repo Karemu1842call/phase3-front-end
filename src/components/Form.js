@@ -33,7 +33,7 @@ function handleSubmit(e){
   }
 return(
     <div className='form'>
-        <form onSubmit={handleSubmit}>>
+        <form onSubmit={handleSubmit}>
             <input type='text' className='jibu' placeholder='Name' value={customer_name}></input>
             <input type='text' className='jibu' placeholder='Address' value={customer_address}></input>
             <input type='string' className='jibu' placeholder='Phone no' value={customer_phone_no}></input>
