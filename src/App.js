@@ -7,6 +7,8 @@ import Cart from './components/Cart';
 import Dealer from './components/Dealer';
 import Footer from './components/Footer';
 import {Route,Routes} from "react-router-dom"
+import cardata from './hooks/Cardata';
+import { useState, useEffect } from "react";
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
     <Routes>
       <Route exact path='/' element={<Home />}/>
       <Route exact path='/hub' element={<Hub />}/>
+      
     </Routes>
     </div>
   );

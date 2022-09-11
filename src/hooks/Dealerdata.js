@@ -8,7 +8,7 @@ function dealerdata(){
       .then(res => res.json())
       .then(data => {
         setdealer(data)
-        // console.log(data)
+        console.log(data)
       })
       .catch(err => console.log(err))
     }, [])

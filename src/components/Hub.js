@@ -1,16 +1,17 @@
 import React from "react"
-function Hub() {
+function Hub(props) {
 // to contain images of the cars in the cars table and on submit the list goes to the cart.
-   const { products, onAdd } = props;
+   const {cars, onAdd } = props;
    return (
-   <main className="block col-2">
-      <h2>Products</h2>
-      <div className="row">
-      {products.map((product) => (
-         <Product key={product.id} product={product} onAdd={onAdd}></Product>
-         )
+   <main className="magari">
+      <h1>Car-Hub</h1>
+      <h2>cars</h2>
+      <div className="ndae">
+         {cars.map((car)=>(
+            <car key={car.id} onAdd={onAdd}></car>
+         ))}
       </div>
-         </main>
+   </main>
          )
       }
 export default Hub
